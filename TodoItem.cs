@@ -20,7 +20,7 @@ public class DBProc
           Console.WriteLine(rs1);
       }
       conn.Close(); */
-      string rs1 = "abc";
+      string rs1 = "abc1";
       return rs1;
      }
 }
