@@ -5,9 +5,9 @@ using Npgsql;
 
 public class DBProc
 {
-  public string Dbinquiry1()
+  public string Dbinquiry()
     { 
-     /*SqlConnection conn=new SqlConnection("server=ss-dfc-pbi.database.windows.net;Database=dw-dfc-pbi;uid=dfc\\chixxl;integrated security=SSPI;");
+     SqlConnection conn=new SqlConnection("server=ss-dfc-pbi.database.windows.net;Database=dw-dfc-pbi;uid=dfc\\chixxl;integrated security=SSPI");
       conn.Open();
       //string sql1 ="update tony_test set strsql='abc' where strsql='1'";
       //SqlCommand Io_cmd1=new SqlCommand(sql1,conn);d
@@ -18,11 +18,10 @@ public class DBProc
       string rs1 = "abc";
       while (read.Read())
       { 
-       rs1 = read["Bname"].ToString();
+          rs1 = read["Bname"].ToString();
           Console.WriteLine(rs1);
       }
-      conn.Close();*/ 
-      string rs1 = "abc1234";
+      conn.Close();
       return rs1;
      }
 
@@ -87,7 +86,7 @@ public class DBProc
 }
 
 
-     public string Dbinquiry()
+     public string Dbinquiry3()
     { 
           string Host = "blazorapps-server.postgres.database.azure.com";
           string User = "jwihtfprvs";
@@ -133,6 +132,7 @@ public class DBProc
                                 )
                             );
                     }
+                    reader.GetData(1);
                     reader.Close();
                 }
             }
