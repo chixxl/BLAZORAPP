@@ -83,7 +83,7 @@ public class DBProc
 
             Console.WriteLine("Press RETURN to exit");
             Console.ReadLine();
-            return "12345678";
+            return "12345678abc";
 }
      }
 
