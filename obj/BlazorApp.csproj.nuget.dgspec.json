@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.4, )"
